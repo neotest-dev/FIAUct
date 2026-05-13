@@ -61,6 +61,7 @@ fun CourseDetailScreen(course: Course) {
             shape = RoundedCornerShape(16.dp)
         ) {
             Column(modifier = Modifier.padding(20.dp)) {
+                DetailItem(label = "Código", value = course.codigo)
                 DetailItem(label = "Curso", value = course.curso)
                 HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
                 DetailItem(label = "Programa", value = course.programa)
