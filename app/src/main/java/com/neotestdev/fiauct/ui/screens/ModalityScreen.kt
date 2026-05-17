@@ -3,10 +3,15 @@ package com.neotestdev.fiauct.ui.screens
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.LocationOn
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
@@ -28,16 +33,28 @@ fun ModalityScreen(modalities: List<String>, onModalitySelected: (String) -> Uni
             items(modalities) { modality ->
                 ElevatedCard(
                     onClick = { onModalitySelected(modality) },
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.elevatedCardColors(
+                        containerColor = MaterialTheme.colorScheme.primary
+                    )
                 ) {
                     Row(
-                        modifier = Modifier.padding(24.dp).fillMaxWidth(),
+                        modifier = Modifier.padding(16.dp).fillMaxWidth(),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
+                        Icon(
+                            imageVector = if (modality.lowercase().contains("presencial") && !modality.lowercase().contains("semi")) 
+                                Icons.Default.LocationOn else Icons.Default.Home,
+                            contentDescription = null,
+                            tint = Color.White,
+                            modifier = Modifier.size(28.dp)
+                        )
+                        Spacer(modifier = Modifier.width(16.dp))
                         Text(
                             text = modality,
-                            style = MaterialTheme.typography.titleMedium,
-                            fontWeight = FontWeight.Medium
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = Color.White
                         )
                     }
                 }

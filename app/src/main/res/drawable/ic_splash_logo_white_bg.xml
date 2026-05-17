@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Aumentamos el margen exterior a 32dp para asegurar que el cuadro
+        esté COMPLETAMENTE dentro del círculo de recorte de Android.
+    -->
+    <item
+        android:top="32dp"
+        android:bottom="32dp"
+        android:left="32dp"
+        android:right="32dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <!-- Radio muy alto para un efecto super suave (estilo iOS/Squircle) -->
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+
+    <!--
+        Logo ajustado: Reducimos sus propios márgenes para que se vea grande
+        dentro del ahora más pequeño cuadro blanco.
+    -->
+    <item
+        android:drawable="@drawable/logo"
+        android:top="52dp"
+        android:bottom="52dp"
+        android:left="52dp"
+        android:right="52dp" />
+</layer-list>

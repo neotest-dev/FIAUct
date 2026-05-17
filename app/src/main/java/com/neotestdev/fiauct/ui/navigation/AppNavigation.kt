@@ -1,5 +1,7 @@
 package com.neotestdev.fiauct.ui.navigation
 
+import androidx.compose.animation.*
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -18,7 +20,7 @@ import com.neotestdev.fiauct.data.model.Course
 import com.neotestdev.fiauct.ui.screens.*
 
 sealed class Screen(val route: String, val title: String) {
-    object Programs : Screen("programs", "Carreras UCT")
+    object Programs : Screen("programs", "FIA - UCT (neotest-dev)")
     object Modalities : Screen("modalities/{program}", "Modalidad")
     object Cycles : Screen("cycles/{program}/{modality}", "Ciclos")
     object Courses : Screen("courses/{program}/{modality}/{cycle}", "Cursos")
@@ -66,7 +68,9 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.onPrimaryContainer
+                    titleContentColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    navigationIconContentColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                    actionIconContentColor = MaterialTheme.colorScheme.onPrimaryContainer
                 )
             )
         }
@@ -74,7 +78,27 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
         NavHost(
             navController = navController,
             startDestination = Screen.Programs.route,
-            modifier = modifier.padding(padding)
+            modifier = modifier.padding(padding),
+            enterTransition = {
+                fadeIn(animationSpec = tween(500)) + 
+                slideInHorizontally(initialOffsetX = { it / 2 }, animationSpec = tween(500)) +
+                scaleIn(initialScale = 0.9f, animationSpec = tween(500))
+            },
+            exitTransition = {
+                fadeOut(animationSpec = tween(500)) + 
+                slideOutHorizontally(targetOffsetX = { -it / 2 }, animationSpec = tween(500)) +
+                scaleOut(targetScale = 1.1f, animationSpec = tween(500))
+            },
+            popEnterTransition = {
+                fadeIn(animationSpec = tween(500)) + 
+                slideInHorizontally(initialOffsetX = { -it / 2 }, animationSpec = tween(500)) +
+                scaleIn(initialScale = 1.1f, animationSpec = tween(500))
+            },
+            popExitTransition = {
+                fadeOut(animationSpec = tween(500)) + 
+                slideOutHorizontally(targetOffsetX = { it / 2 }, animationSpec = tween(500)) +
+                scaleOut(targetScale = 0.9f, animationSpec = tween(500))
+            }
         ) {
             composable(Screen.Programs.route) {
                 val programs = allCourses.map { it.programa }.distinct()

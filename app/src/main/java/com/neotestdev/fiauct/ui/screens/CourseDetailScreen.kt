@@ -35,7 +35,7 @@ fun CourseDetailScreen(course: Course) {
                 imageVector = Icons.Default.Person,
                 contentDescription = null,
                 modifier = Modifier.size(60.dp),
-                tint = MaterialTheme.colorScheme.primary
+                tint = MaterialTheme.colorScheme.onPrimaryContainer
             )
         }
         
@@ -43,7 +43,7 @@ fun CourseDetailScreen(course: Course) {
         
         Text(
             text = course.docente,
-            style = MaterialTheme.typography.headlineMedium,
+            style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurface
@@ -58,22 +58,28 @@ fun CourseDetailScreen(course: Course) {
         
         ElevatedCard(
             modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(16.dp)
+            shape = RoundedCornerShape(16.dp),
+            colors = CardDefaults.elevatedCardColors(
+                containerColor = MaterialTheme.colorScheme.primary
+            )
         ) {
             Column(modifier = Modifier.padding(20.dp)) {
-                DetailItem(label = "Código", value = course.codigo)
-                DetailItem(label = "Curso", value = course.curso)
-                HorizontalDivider(modifier = Modifier.padding(vertical = 12.dp))
-                DetailItem(label = "Programa", value = course.programa)
-                DetailItem(label = "Modalidad", value = course.modalidad)
-                DetailItem(label = "Ciclo", value = "Ciclo ${course.ciclo}")
+                DetailItem(label = "Código", value = course.codigo, isInverse = true)
+                DetailItem(label = "Curso", value = course.curso, isInverse = true)
+                HorizontalDivider(
+                    modifier = Modifier.padding(vertical = 12.dp),
+                    color = Color.White.copy(alpha = 0.2f)
+                )
+                DetailItem(label = "Programa", value = course.programa, isInverse = true)
+                DetailItem(label = "Modalidad", value = course.modalidad, isInverse = true)
+                DetailItem(label = "Ciclo", value = "Ciclo ${course.ciclo}", isInverse = true)
             }
         }
     }
 }
 
 @Composable
-fun DetailItem(label: String, value: String) {
+fun DetailItem(label: String, value: String, isInverse: Boolean = false) {
     Row(
         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
         horizontalArrangement = Arrangement.SpaceBetween
@@ -81,13 +87,14 @@ fun DetailItem(label: String, value: String) {
         Text(
             text = label,
             style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.outline
+            color = if (isInverse) Color.White.copy(alpha = 0.7f) else MaterialTheme.colorScheme.outline
         )
         Text(
             text = value,
             style = MaterialTheme.typography.bodyLarge,
-            fontWeight = FontWeight.Medium,
+            fontWeight = FontWeight.Bold,
             textAlign = TextAlign.End,
+            color = if (isInverse) Color.White else MaterialTheme.colorScheme.onSurface,
             modifier = Modifier.weight(1f).padding(start = 16.dp)
         )
     }

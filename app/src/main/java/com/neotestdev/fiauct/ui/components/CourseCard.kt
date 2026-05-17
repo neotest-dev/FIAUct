@@ -25,7 +25,7 @@ fun CourseCard(course: Course, onClick: () -> Unit) {
             .padding(vertical = 4.dp),
         onClick = onClick,
         colors = CardDefaults.elevatedCardColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = MaterialTheme.colorScheme.primary
         )
     ) {
         Row(
@@ -38,7 +38,7 @@ fun CourseCard(course: Course, onClick: () -> Unit) {
                 modifier = Modifier
                     .size(48.dp)
                     .background(
-                        color = MaterialTheme.colorScheme.primaryContainer,
+                        color = Color.White.copy(alpha = 0.2f),
                         shape = CircleShape
                     ),
                 contentAlignment = Alignment.Center
@@ -46,7 +46,7 @@ fun CourseCard(course: Course, onClick: () -> Unit) {
                 Icon(
                     imageVector = Icons.Default.List,
                     contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary
+                    tint = Color.White
                 )
             }
             
@@ -57,20 +57,21 @@ fun CourseCard(course: Course, onClick: () -> Unit) {
                     text = course.curso,
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
+                    color = Color.White,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
                 )
                 Text(
                     text = "Ver docente asignado",
                     style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.outline
+                    color = Color.White.copy(alpha = 0.8f)
                 )
             }
             
             Icon(
                 imageVector = Icons.Default.PlayArrow,
                 contentDescription = null,
-                tint = MaterialTheme.colorScheme.outline
+                tint = Color.White
             )
         }
     }
