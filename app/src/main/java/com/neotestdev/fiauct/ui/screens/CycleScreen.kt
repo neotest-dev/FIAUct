@@ -14,8 +14,13 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CycleScreen(cycles: List<String>, onCycleSelected: (String) -> Unit) {
+fun CycleScreen(program: String, modality: String, cycles: List<String>, onCycleSelected: (String) -> Unit) {
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+        Text(
+            text = "$program > $modality",
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary.copy(alpha = 0.7f)
+        )
         Text(
             text = "¿En qué ciclo se encuentra?",
             style = MaterialTheme.typography.headlineSmall,

@@ -44,35 +44,27 @@ fun ProgramScreen(programs: List<String>, onProgramSelected: (String) -> Unit) {
             verticalArrangement = Arrangement.spacedBy(12.dp),
             modifier = Modifier.fillMaxWidth()
         ) {
-            items(programs.size) { index ->
-                val program = programs[index]
-                AnimatedVisibility(
-                    visible = true,
-                    enter = fadeIn(animationSpec = tween(500, delayMillis = index * 100)) +
-                            slideInVertically(
-                                initialOffsetY = { 50 },
-                                animationSpec = tween(500, delayMillis = index * 100)
-                            ),
-                    modifier = Modifier.fillMaxWidth()
+            items(
+                items = programs,
+                key = { it } // Ayuda a Compose a no recrear la tarjeta si no cambia
+            ) { program ->
+                ElevatedCard(
+                    onClick = { onProgramSelected(program) },
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.elevatedCardColors(
+                        containerColor = MaterialTheme.colorScheme.primary
+                    )
                 ) {
-                    ElevatedCard(
-                        onClick = { onProgramSelected(program) },
-                        modifier = Modifier.fillMaxWidth(),
-                        colors = CardDefaults.elevatedCardColors(
-                            containerColor = MaterialTheme.colorScheme.primary
-                        )
+                    Box(
+                        modifier = Modifier.padding(12.dp).fillMaxWidth(),
+                        contentAlignment = Alignment.Center
                     ) {
-                        Box(
-                            modifier = Modifier.padding(12.dp).fillMaxWidth(),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Text(
-                                text = program,
-                                style = MaterialTheme.typography.titleLarge,
-                                fontWeight = FontWeight.Bold,
-                                color = Color.White
-                            )
-                        }
+                        Text(
+                            text = program,
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = Color.White
+                        )
                     }
                 }
             }

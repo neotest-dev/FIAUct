@@ -17,8 +17,13 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ModalityScreen(modalities: List<String>, onModalitySelected: (String) -> Unit) {
+fun ModalityScreen(program: String, modalities: List<String>, onModalitySelected: (String) -> Unit) {
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+        Text(
+            text = program,
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary.copy(alpha = 0.7f)
+        )
         Text(
             text = "Elija su modalidad",
             style = MaterialTheme.typography.headlineSmall,
@@ -30,7 +35,10 @@ fun ModalityScreen(modalities: List<String>, onModalitySelected: (String) -> Uni
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            items(modalities) { modality ->
+            items(
+                items = modalities,
+                key = { it }
+            ) { modality ->
                 ElevatedCard(
                     onClick = { onModalitySelected(modality) },
                     modifier = Modifier.fillMaxWidth(),

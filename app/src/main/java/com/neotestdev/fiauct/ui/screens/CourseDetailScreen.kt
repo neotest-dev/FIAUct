@@ -71,7 +71,10 @@ fun CourseDetailScreen(course: Course) {
                     color = Color.White.copy(alpha = 0.2f)
                 )
                 DetailItem(label = "Programa", value = course.programa, isInverse = true)
-                DetailItem(label = "Modalidad", value = course.modalidad, isInverse = true)
+                DetailItem(label = "Modalidad Carrera", value = course.modalidad, isInverse = true)
+                course.modCurso?.let {
+                    DetailItem(label = "Modalidad del Curso", value = it, isInverse = true)
+                }
                 DetailItem(label = "Ciclo", value = "Ciclo ${course.ciclo}", isInverse = true)
             }
         }

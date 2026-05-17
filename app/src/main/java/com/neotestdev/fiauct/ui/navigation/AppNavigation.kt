@@ -24,7 +24,7 @@ sealed class Screen(val route: String, val title: String) {
     object Modalities : Screen("modalities/{program}", "Modalidad")
     object Cycles : Screen("cycles/{program}/{modality}", "Ciclos")
     object Courses : Screen("courses/{program}/{modality}/{cycle}", "Cursos")
-    object CourseDetail : Screen("courseDetail/{courseName}/{docente}", "Detalle del Curso")
+    object CourseDetail : Screen("courseDetail/{courseName}/{docente}/{modality}/{cycle}", "Detalle del Curso")
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -79,26 +79,10 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
             navController = navController,
             startDestination = Screen.Programs.route,
             modifier = modifier.padding(padding),
-            enterTransition = {
-                fadeIn(animationSpec = tween(500)) + 
-                slideInHorizontally(initialOffsetX = { it / 2 }, animationSpec = tween(500)) +
-                scaleIn(initialScale = 0.9f, animationSpec = tween(500))
-            },
-            exitTransition = {
-                fadeOut(animationSpec = tween(500)) + 
-                slideOutHorizontally(targetOffsetX = { -it / 2 }, animationSpec = tween(500)) +
-                scaleOut(targetScale = 1.1f, animationSpec = tween(500))
-            },
-            popEnterTransition = {
-                fadeIn(animationSpec = tween(500)) + 
-                slideInHorizontally(initialOffsetX = { -it / 2 }, animationSpec = tween(500)) +
-                scaleIn(initialScale = 1.1f, animationSpec = tween(500))
-            },
-            popExitTransition = {
-                fadeOut(animationSpec = tween(500)) + 
-                slideOutHorizontally(targetOffsetX = { it / 2 }, animationSpec = tween(500)) +
-                scaleOut(targetScale = 0.9f, animationSpec = tween(500))
-            }
+            enterTransition = { fadeIn(animationSpec = tween(200)) },
+            exitTransition = { fadeOut(animationSpec = tween(200)) },
+            popEnterTransition = { fadeIn(animationSpec = tween(200)) },
+            popExitTransition = { fadeOut(animationSpec = tween(200)) }
         ) {
             composable(Screen.Programs.route) {
                 val programs = allCourses.map { it.programa }.distinct()
@@ -113,7 +97,7 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
             ) { backStackEntry ->
                 val program = backStackEntry.arguments?.getString("program") ?: ""
                 val modalities = allCourses.filter { it.programa == program }.map { it.modalidad }.distinct()
-                ModalityScreen(modalities) { modality ->
+                ModalityScreen(program, modalities) { modality ->
                     navController.navigate("cycles/$program/$modality")
                 }
             }
@@ -129,7 +113,7 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 val modality = backStackEntry.arguments?.getString("modality") ?: ""
                 val cycles = allCourses.filter { it.programa == program && it.modalidad == modality }
                     .map { it.ciclo }.distinct()
-                CycleScreen(cycles) { cycle ->
+                CycleScreen(program, modality, cycles) { cycle ->
                     navController.navigate("courses/$program/$modality/$cycle")
                 }
             }
@@ -148,8 +132,8 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 val filteredCourses = allCourses.filter { 
                     it.programa == program && it.modalidad == modality && it.ciclo == cycle 
                 }
-                CoursesScreen(filteredCourses) { course ->
-                    navController.navigate("courseDetail/${course.curso}/${course.docente}")
+                CoursesScreen(program, modality, cycle, filteredCourses) { course ->
+                    navController.navigate("courseDetail/${course.curso}/${course.docente}/${course.modalidad}/${course.ciclo}")
                 }
             }
 
@@ -157,12 +141,22 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 route = Screen.CourseDetail.route,
                 arguments = listOf(
                     navArgument("courseName") { type = NavType.StringType },
-                    navArgument("docente") { type = NavType.StringType }
+                    navArgument("docente") { type = NavType.StringType },
+                    navArgument("modality") { type = NavType.StringType },
+                    navArgument("cycle") { type = NavType.StringType }
                 )
             ) { backStackEntry ->
                 val courseName = backStackEntry.arguments?.getString("courseName") ?: ""
                 val docente = backStackEntry.arguments?.getString("docente") ?: ""
-                val course = allCourses.find { it.curso == courseName && it.docente == docente }
+                val modality = backStackEntry.arguments?.getString("modality") ?: ""
+                val cycle = backStackEntry.arguments?.getString("cycle") ?: ""
+                
+                val course = allCourses.find { 
+                    it.curso == courseName && 
+                    it.docente == docente && 
+                    it.modalidad == modality && 
+                    it.ciclo == cycle
+                }
                 course?.let { CourseDetailScreen(it) }
             }
         }

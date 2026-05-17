@@ -12,7 +12,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.neotestdev.fiauct.data.model.Course
 
@@ -57,15 +56,16 @@ fun CourseCard(course: Course, onClick: () -> Unit) {
                     text = course.curso,
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
+                    color = Color.White
                 )
-                Text(
-                    text = "Ver docente asignado",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = Color.White.copy(alpha = 0.8f)
-                )
+                course.modCurso?.let {
+                    Text(
+                        text = "Modalidad: $it",
+                        style = MaterialTheme.typography.labelSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = Color(0xFFFFEB3B) // Amarillo para todas las modalidades
+                    )
+                }
             }
             
             Icon(
