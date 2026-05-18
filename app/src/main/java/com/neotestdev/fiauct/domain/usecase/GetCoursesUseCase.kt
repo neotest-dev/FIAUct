@@ -7,12 +7,7 @@ import com.neotestdev.fiauct.data.repository.CourseRepository
 class GetCoursesUseCase(private val repository: CourseRepository) {
 
     suspend operator fun invoke(context: Context): List<Course> {
-        // Lógica de negocio: Intentar red, si falla usar local
-        val remoteCourses = repository.fetchCoursesFromNetwork()
-        return if (remoteCourses.isNotEmpty()) {
-            remoteCourses
-        } else {
-            repository.loadCoursesFromAssets(context)
-        }
+        // Lógica de negocio: Carga estrictamente local desde assets
+        return repository.loadCoursesFromAssets(context)
     }
 }
