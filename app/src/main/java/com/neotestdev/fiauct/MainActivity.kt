@@ -16,7 +16,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.neotestdev.fiauct.ui.CourseUiState
@@ -33,16 +32,14 @@ class MainActivity : ComponentActivity() {
         setContent {
             val viewModel: CourseViewModel = viewModel()
             val uiState by viewModel.uiState.collectAsState()
-            val context = LocalContext.current
 
             // Keep splash screen until data is loaded
             splashScreen.setKeepOnScreenCondition {
                 uiState is CourseUiState.Loading
             }
 
-            // Carga automática al abrir
             LaunchedEffect(Unit) {
-                viewModel.loadCourses(context)
+                viewModel.loadCourses()
             }
 
             FIAUctTheme {
@@ -64,7 +61,7 @@ class MainActivity : ComponentActivity() {
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                                     Text(text = "Error: ${state.message}")
                                     Button(
-                                        onClick = { viewModel.loadCourses(context) },
+                                        onClick = { viewModel.loadCourses() },
                                         modifier = Modifier.padding(top = 16.dp)
                                     ) {
                                         Text("Reintentar")

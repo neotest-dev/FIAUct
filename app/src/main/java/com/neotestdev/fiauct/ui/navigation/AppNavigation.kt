@@ -27,6 +27,22 @@ sealed class Screen(val route: String, val title: String) {
     object CourseDetail : Screen("courseDetail/{courseName}/{docente}/{modality}/{cycle}", "Detalle del Curso")
 }
 
+private fun cycleOrder(cycle: String): Int {
+    return when (cycle.trim().uppercase()) {
+        "I" -> 1
+        "II" -> 2
+        "III" -> 3
+        "IV" -> 4
+        "V" -> 5
+        "VI" -> 6
+        "VII" -> 7
+        "VIII" -> 8
+        "IX" -> 9
+        "X" -> 10
+        else -> Int.MAX_VALUE
+    }
+}
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
@@ -112,7 +128,9 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 val program = backStackEntry.arguments?.getString("program") ?: ""
                 val modality = backStackEntry.arguments?.getString("modality") ?: ""
                 val cycles = allCourses.filter { it.programa == program && it.modalidad == modality }
-                    .map { it.ciclo }.distinct()
+                    .map { it.ciclo }
+                    .distinct()
+                    .sortedBy(::cycleOrder)
                 CycleScreen(program, modality, cycles) { cycle ->
                     navController.navigate("courses/$program/$modality/$cycle")
                 }
