@@ -1,0 +1,915 @@
+﻿codigo,creditos,tipoEstudio,horas
+PRARNOP240101,2,Estudios Específicos,3
+PRARNOP240102,3,Estudios Generales,4
+PRARNOP240103,2,Estudios de Especialidad,3
+PRARNOP240104,2,Estudios Generales,3
+PRARNOP240105,2,Estudios Generales,3
+PRARNOP240106,3,Estudios Generales,4
+PRARNOP240107,3,Estudios Generales,4
+PRARNOP240108,4,Estudios Generales,6
+PRARNOP240209,3,Estudios Específicos,4
+PRARNOP240210,2,Estudios Generales,3
+PRARNOP240211,2,Estudios de Especialidad,3
+PRARNOP240212,3,Estudios de Especialidad,4
+PRARNOP240213,2,Estudios Específicos,3
+PRARNOP240214,3,Estudios Específicos,4
+PRARNOP240215,3,Estudios de Especialidad,4
+PRARNOP240216,4,Estudios de Especialidad,6
+PRARNOP240317,3,Estudios Específicos,4
+PRARNOP240318,2,Estudios Específicos,3
+PRARNOP240319,3,Estudios de Especialidad,4
+PRARNOP240320,3,Estudios Específicos,4
+PRARNOP240321,3,Estudios Específicos,4
+PRARNOP240322,3,Estudios de Especialidad,4
+PRARNOP240323,4,Estudios Generales,6
+PRARNOP240424,3,Estudios de Especialidad,4
+PRARNOP240425,2,Estudios de Especialidad,3
+PRARNOP240426,3,Estudios Específicos,4
+PRARNOP240427,3,Estudios Específicos,4
+PRARNOP240428,3,Estudios Específicos,4
+PRARNOP240429,3,Estudios de Especialidad,4
+PRARNOP240430,4,Estudios Generales,6
+PRARNOP240531,3,Estudios de Especialidad,4
+PRARNOP240532,3,Estudios Específicos,4
+PRARNOP240533,3,Estudios de Especialidad,4
+PRARNOP240534,3,Estudios Específicos,4
+PRARNOP240535,3,Estudios de Especialidad,4
+PRARNOP240536,2,Estudios de Especialidad,3
+PRARNOP240537,4,Estudios Generales,6
+PRARNOP240638,3,Estudios de Especialidad,4
+PRARNOP240639,3,Estudios de Especialidad,4
+PRARNOP240640,3,Estudios de Especialidad,5
+PRARNOP240641,3,Estudios Específicos,4
+PRARNOP240642,3,Estudios de Especialidad,4
+PRARNOP240643,2,Estudios Específicos,3
+PRARNOP240644,4,Estudios Generales,6
+PRARNOP240745,3,Estudios de Especialidad,4
+PRARNOP240746,2,Estudios de Especialidad,3
+PRARNOP240747,3,Estudios de Especialidad,4
+PRARNOP240748,2,Estudios Específicos,3
+PRARNOP240749,2,Estudios de Especialidad,2
+PRARNOP240750,3,Estudios Específicos,4
+PRARNOP240751,4,Estudios Específicos,6
+PRARNOP240852,2,Estudios de Especialidad,3
+PRARNOP240853,3,Estudios de Especialidad,4
+PRARNOP240854,2,Estudios Específicos,3
+PRARNOP240855,2,Estudios Específicos,3
+PRARNOP240856,5,Estudios de Especialidad,8
+PRARNOP240857,4,Estudios de Especialidad,6
+PRARNOP240958,2,Estudios de Especialidad,3
+PRARNOP240959,4,Estudios de Especialidad,6
+PRARNOP240960,2,Estudios Específicos,3
+PRARNOP240961,2,Estudios Específicos,3
+PRARNOP240962,2,Estudios Específicos,2
+PRARNOP240963,5,Estudios Específicos,8
+PRARNOP241064,3,Estudios Específicos,4
+PRARNOP241065,3,Estudios Específicos,4
+PRARNOP241066,5,Estudios de Especialidad,8
+PRARNOP241067,2,Estudios de Especialidad,3
+PRARNOP241068,2,Estudios de Especialidad,3
+PRARNOP241069,4,Estudios Específicos,6
+PRICNOP240101,2,Estudios Generales,2
+PRICNOP240102,2,Estudios Generales,2
+PRICNOP240103,3,Estudios Generales,4
+PRICNOP240104,4,Estudios de Especialidad,6
+PRICNOP240105,3,Estudios Generales,4
+PRICNOP240106,3,Estudios Generales,4
+PRICNOP240107,4,Estudios de Especialidad,6
+PRICNOP240208,2,Estudios Generales,2
+PRICNOP240209,3,Estudios de Especialidad,4
+PRICNOP240210,4,Estudios Específicos,6
+PRICNOP240211,3,Estudios Generales,4
+PRICNOP240212,3,Estudios Generales,4
+PRICNOP240213,3,Estudios de Especialidad,4
+PRICNOP240214,3,Estudios Generales,4
+PRICNOP240315,2,Estudios Específicos,2
+PRICNOP240316,2,Estudios Específicos,2
+PRICNOP240317,4,Estudios de Especialidad,6
+PRICNOP240318,3,Estudios de Especialidad,4
+PRICNOP240319,3,Estudios de Especialidad,4
+PRICNOP240320,3,Estudios de Especialidad,4
+PRICNOP240321,4,Estudios de Especialidad,6
+PRICNOP240422,3,Estudios Generales,4
+PRICNOP240423,3,Estudios de Especialidad,4
+PRICNOP240424,4,Estudios Específicos,6
+PRICNOP240425,3,Estudios Específicos,4
+PRICNOP240426,4,Estudios de Especialidad,6
+PRICNOP240427,4,Estudios de Especialidad,6
+PRICNOP240528,2,Estudios Generales,2
+PRICNOP240529,4,Estudios de Especialidad,6
+PRICNOP240530,3,Estudios de Especialidad,4
+PRICNOP240531,3,Estudios de Especialidad,4
+PRICNOP240532,4,Estudios Específicos,6
+PRICNOP240533,4,Estudios Específicos,6
+PRICNOP240634,2,Estudios Generales,2
+PRICNOP240635,4,Estudios de Especialidad,6
+PRICNOP240636,4,Estudios de Especialidad,6
+PRICNOP240637,3,Estudios de Especialidad,4
+PRICNOP240638,3,Estudios de Especialidad,4
+PRICNOP240639,3,Estudios de Especialidad,4
+PRICNOP240740,3,Estudios de Especialidad,4
+PRICNOP240741,4,Estudios de Especialidad,6
+PRICNOP240742,4,Estudios de Especialidad,6
+PRICNOP240743,3,Estudios Específicos,4
+PRICNOP240744,3,Estudios de Especialidad,4
+PRICNOP240745,3,Estudios de Especialidad,4
+PRICNOP240846,3,Estudios de Especialidad,4
+PRICNOP240847,4,Estudios de Especialidad,6
+PRICNOP240848,4,Estudios Específicos,6
+PRICNOP240849,4,Estudios de Especialidad,6
+PRICNOP240850,4,Estudios de Especialidad,6
+PRICNOP240951,5,Estudios de Especialidad,8
+PRICNOP240952,3,Estudios de Especialidad,4
+PRICNOP240953,3,Estudios de Especialidad,4
+PRICNOP240954,3,Estudios de Especialidad,4
+PRICNOP240955,5,Estudios de Especialidad,10
+PRICNOP241056,4,Estudios de Especialidad,6
+PRICNOP241057,4,Estudios Generales,6
+PRICNOP241058,3,Estudios de Especialidad,4
+PRICNOP241059,3,Estudios de Especialidad,4
+PRICNOP241060,5,Estudios de Especialidad,10
+PRIINOP01,2,Estudios Generales,3
+PRIINOP02,2,Estudios Generales,3
+PRIINOP03,3,Estudios Generales,4
+PRIINOP04,4,Estudios de Especialidad,6
+PRIINOP05,4,Estudios Específicos,6
+PRIINOP06,2,Estudios Generales,2
+PRIINOP07,4,Estudios de Especialidad,5
+PRIINOP08,2,Estudios Generales,3
+PRIINOP09,2,Estudios Específicos,3
+PRIINOP10,4,Estudios Específicos,6
+PRIINOP11,4,Estudios Específicos,6
+PRIINOP12,2,Estudios Generales,3
+PRIINOP13,4,Estudios Específicos,6
+PRIINOP14,2,Estudios Generales,3
+PRIINOP15,2,Estudios Generales,3
+PRIINOP16,4,Estudios de Especialidad,6
+PRIINOP17,4,Estudios de Especialidad,6
+PRIINOP18,4,Estudios de Especialidad,6
+PRIINOP19,3,Estudios Específicos,4
+PRIINOP20,2,Estudios de Especialidad,3
+PRIINOP21,3,Estudios Generales,4
+PRIINOP22,3,Estudios de Especialidad,4
+PRIINOP23,3,Estudios de Especialidad,4
+PRIINOP24,4,Estudios de Especialidad,6
+PRIINOP25,2,Estudios Específicos,3
+PRIINOP26,4,Estudios de Especialidad,6
+PRIINOP27,3,Estudios Generales,4
+PRIINOP28,2,Estudios Generales,3
+PRIINOP29,3,Estudios de Especialidad,4
+PRIINOP30,4,Estudios de Especialidad,6
+PRIINOP31,2,Estudios de Especialidad,3
+PRIINOP32,4,Estudios de Especialidad,6
+PRIINOP33,2,Estudios Generales,3
+PRIINOP34,2,Estudios de Especialidad,3
+PRIINOP35,2,Estudios Generales,3
+PRIINOP36,3,Estudios de Especialidad,4
+PRIINOP37,4,Estudios de Especialidad,6
+PRIINOP38,3,Estudios de Especialidad,5
+PRIINOP39,4,Estudios Específicos,6
+PRIINOP40,3,Estudios de Especialidad,4
+PRIINOP41,3,Estudios Generales,4
+PRIINOP42,3,Estudios de Especialidad,4
+PRIINOP43,4,Estudios de Especialidad,6
+PRIINOP44,3,Estudios de Especialidad,4
+PRIINOP45,3,Estudios de Especialidad,4
+PRIINOP46,3,Estudios de Especialidad,4
+PRIINOP47,2,Estudios Específicos,3
+PRIINOP48,3,Estudios Específicos,4
+PRIINOP49,3,Estudios Específicos,5
+PRIINOP50,3,Estudios de Especialidad,5
+PRIINOP51,4,Estudios de Especialidad,6
+PRIINOP52,2,Estudios de Especialidad,3
+PRIINOP53,2,Estudios de Especialidad,3
+PRIINOP54,1,Estudios Específicos,2
+PRIINOP55,5,Estudios Específicos,8
+PRIINOP56,3,Estudios Generales,5
+PRIINOP57,3,Estudios de Especialidad,5
+PRIINOP58,4,Estudios de Especialidad,6
+PRIINOP59,1,Estudios Específicos,2
+PRIINOP60,4,Estudios de Especialidad,7
+PRIINOP61,5,Estudios Específicos,8
+PRIINOP62,4,Estudios de Especialidad,6
+PRIINOP63,4,Estudios de Especialidad,6
+PRIINOP64,4,Estudios Específicos,6
+PRIINOP65,4,Estudios de Especialidad,7
+PRIANOP240101,2,Estudios Generales,2
+PRIANOP240102,3,Estudios Generales,4
+PRIANOP240103,3,Estudios de Especialidad,4
+PRIANOP240104,4,Estudios Generales,5
+PRIANOP240105,5,Estudios Generales,7
+PRIANOP240106,2,Estudios Generales,2
+PRIANOP240107,3,Estudios Generales,4
+PRIANOP240208,2,Estudios Generales,2
+PRIANOP240209,3,Estudios de Especialidad,5
+PRIANOP240210,3,Estudios Específicos,4
+PRIANOP240211,2,Estudios de Especialidad,2
+PRIANOP240212,4,Estudios de Especialidad,5
+PRIANOP240213,2,Estudios Generales,2
+PRIANOP240214,2,Estudios Generales,2
+PRIANOP240315,3,Estudios Específicos,4
+PRIANOP240316,3,Estudios Específicos,4
+PRIANOP240317,3,Estudios de Especialidad,4
+PRIANOP240318,3,Estudios Específicos,4
+PRIANOP240319,4,Estudios Específicos,5
+PRIANOP240320,3,Estudios Generales,4
+PRIANOP240321,3,Estudios Generales,4
+PRIANOP240422,2,Estudios de Especialidad,2
+PRIANOP240423,4,Estudios de Especialidad,6
+PRIANOP240424,3,Estudios Específicos,4
+PRIANOP240425,3,Estudios Específicos,4
+PRIANOP240426,3,Estudios Específicos,4
+PRIANOP240427,3,Estudios de Especialidad,4
+PRIANOP240428,4,Estudios Generales,6
+PRIANOP240529,3,Estudios de Especialidad,4
+PRIANOP240530,3,Estudios Específicos,4
+PRIANOP240531,3,Estudios de Especialidad,4
+PRIANOP240532,3,Estudios Específicos,4
+PRIANOP240533,3,Estudios de Especialidad,4
+PRIANOP240534,3,Estudios de Especialidad,4
+PRIANOP240535,3,Estudios de Especialidad,5
+PRIANOP240636,3,Estudios de Especialidad,4
+PRIANOP240637,3,Estudios de Especialidad,4
+PRIANOP240638,3,Estudios de Especialidad,4
+PRIANOP240639,3,Estudios Específicos,4
+PRIANOP240640,3,Estudios de Especialidad,4
+PRIANOP240641,3,Estudios Específicos,4
+PRIANOP240642,3,Estudios de Especialidad,4
+PRIANOP240743,2,Estudios de Especialidad,2
+PRIANOP240744,3,Estudios de Especialidad,4
+PRIANOP240745,3,Estudios de Especialidad,4
+PRIANOP240746,4,Estudios Específicos,5
+PRIANOP240747,3,Estudios de Especialidad,4
+PRIANOP240748,3,Estudios Específicos,5
+PRIANOP240749,3,Estudios Específicos,4
+PRIANOP240850,3,Estudios de Especialidad,4
+PRIANOP240851,2,Estudios de Especialidad,2
+PRIANOP240852,3,Estudios Específicos,4
+PRIANOP240853,2,Estudios de Especialidad,2
+PRIANOP240854,5,Estudios Específicos,6
+PRIANOP240855,3,Estudios de Especialidad,4
+PRIANOP240856,3,Estudios de Especialidad,4
+PRIANOP240957,2,Estudios de Especialidad,2
+PRIANOP240958,3,Estudios de Especialidad,4
+PRIANOP240959,3,Estudios Específicos,5
+PRIANOP240960,3,Estudios de Especialidad,4
+PRIANOP240961,5,Estudios Específicos,7
+PRIANOP240962,3,Estudios de Especialidad,4
+PRIANOP241063,3,Estudios de Especialidad,4
+PRIANOP241064,4,Estudios Específicos,6
+PRIANOP241065,2,Estudios de Especialidad,3
+PRIANOP241066,4,Estudios de Especialidad,5
+PRIENOP240101,3,Estudios de Especialidad,4
+PRIENOP240102,2,Estudios Generales,2
+PRIENOP240103,3,Estudios Específicos,4
+PRIENOP240104,4,Estudios Específicos,5
+PRIENOP240105,3,Estudios de Especialidad,5
+PRIENOP240106,4,Estudios de Especialidad,5
+PRIENOP240107,2,Estudios Generales,3
+PRIENOP240208,2,Estudios Generales,3
+PRIENOP240209,2,Estudios Generales,3
+PRIENOP240210,4,Estudios Específicos,6
+PRIENOP240211,3,Estudios Específicos,4
+PRIENOP240212,2,Estudios Generales,3
+PRIENOP240213,4,Estudios Específicos,5
+PRIENOP240214,4,Estudios Específicos,5
+PRIENOP240315,2,Estudios Generales,3
+PRIENOP240316,2,Estudios Generales,2
+PRIENOP240317,3,Estudios de Especialidad,5
+PRIENOP240318,2,Estudios Generales,3
+PRIENOP240319,4,Estudios Específicos,5
+PRIENOP240320,3,Estudios Específicos,4
+PRIENOP240321,3,Estudios Específicos,4
+PRIENOP240422,3,Estudios Generales,4
+PRIENOP240423,3,Estudios Generales,4
+PRIENOP240424,3,Estudios de Especialidad,4
+PRIENOP240425,3,Estudios Específicos,4
+PRIENOP240426,3,Estudios de Especialidad,5
+PRIENOP240427,3,Estudios Específicos,4
+PRIENOP240428,2,Estudios Generales,3
+PRIENOP240529,2,Estudios de Especialidad,3
+PRIENOP240530,3,Estudios de Especialidad,4
+PRIENOP240531,3,Estudios de Especialidad,4
+PRIENOP240532,3,Estudios de Especialidad,4
+PRIENOP240533,3,Estudios Específicos,4
+PRIENOP240534,3,Estudios de Especialidad,5
+PRIENOP240535,2,Estudios Generales,3
+PRIENOP240636,3,Estudios Específicos,4
+PRIENOP240637,3,Estudios Generales,4
+PRIENOP240638,2,Estudios de Especialidad,3
+PRIENOP240639,3,Estudios de Especialidad,4
+PRIENOP240640,3,Estudios Generales,4
+PRIENOP240641,3,Estudios Específicos,4
+PRIENOP240642,3,Estudios de Especialidad,5
+PRIENOP240743,3,Estudios de Especialidad,4
+PRIENOP240744,2,Estudios de Especialidad,3
+PRIENOP240745,3,Estudios Generales,4
+PRIENOP240746,3,Estudios de Especialidad,4
+PRIENOP240747,3,Estudios Específicos,4
+PRIENOP240748,3,Estudios de Especialidad,4
+PRIENOP240749,3,Estudios de Especialidad,4
+PRIENOP240850,2,Estudios Específicos,3
+PRIENOP240851,3,Estudios de Especialidad,4
+PRIENOP240852,3,Estudios de Especialidad,4
+PRIENOP240853,3,Estudios de Especialidad,4
+PRIENOP240854,5,Estudios Específicos,7
+PRIENOP240855,3,Estudios de Especialidad,4
+PRIENOP240956,3,Estudios de Especialidad,4
+PRIENOP240957,4,Estudios Específicos,6
+PRIENOP240958,3,Estudios de Especialidad,4
+PRIENOP240959,3,Estudios Específicos,4
+PRIENOP240960,4,Estudios Específicos,6
+PRIENOP240961,4,Estudios de Especialidad,7
+PRIENOP241062,3,Estudios de Especialidad,5
+PRIENOP241063,4,Estudios de Especialidad,7
+PRIENOP241064,4,Estudios Específicos,6
+PRIENOP241065,3,Estudios de Especialidad,4
+PRIENOP241066,3,Estudios de Especialidad,4
+PRIENOP241067,3,Estudios de Especialidad,4
+PRIINOP240101,3,Estudios de Especialidad,4
+PRIINOP240102,2,Estudios Generales,2
+PRIINOP240103,3,Estudios Específicos,4
+PRIINOP240104,4,Estudios Específicos,6
+PRIINOP240105,4,Estudios Generales,5
+PRIINOP240106,3,Estudios Específicos,4
+PRIINOP240107,2,Estudios de Especialidad,2
+PRIINOP240208,2,Estudios Generales,3
+PRIINOP240209,2,Estudios Específicos,3
+PRIINOP240210,3,Estudios Generales,4
+PRIINOP240211,3,Estudios Específicos,4
+PRIINOP240212,2,Estudios Generales,3
+PRIINOP240213,4,Estudios de Especialidad,5
+PRIINOP240214,4,Estudios Específicos,5
+PRIINOP240315,2,Estudios Generales,3
+PRIINOP240316,2,Estudios Generales,3
+PRIINOP240317,3,Estudios de Especialidad,4
+PRIINOP240318,2,Estudios Generales,3
+PRIINOP240319,4,Estudios Específicos,5
+PRIINOP240320,3,Estudios Específicos,4
+PRIINOP240321,3,Estudios de Especialidad,4
+PRIINOP240422,3,Estudios Generales,4
+PRIINOP240423,3,Estudios de Especialidad,4
+PRIINOP240424,3,Estudios de Especialidad,4
+PRIINOP240425,4,Estudios Específicos,6
+PRIINOP240426,3,Estudios de Especialidad,4
+PRIINOP240427,2,Estudios Generales,3
+PRIINOP240528,3,Estudios de Especialidad,4
+PRIINOP240529,4,Estudios de Especialidad,6
+PRIINOP240530,3,Estudios de Especialidad,4
+PRIINOP240531,4,Estudios de Especialidad,6
+PRIINOP240532,3,Estudios de Especialidad,4
+PRIINOP240533,2,Estudios Generales,3
+PRIINOP240534,3,Estudios Específicos,5
+PRIINOP240635,3,Estudios de Especialidad,4
+PRIINOP240636,3,Estudios Generales,5
+PRIINOP240637,4,Estudios de Especialidad,5
+PRIINOP240638,4,Estudios de Especialidad,5
+PRIINOP240639,3,Estudios Generales,5
+PRIINOP240640,3,Estudios Específicos,4
+PRIINOP240741,4,Estudios de Especialidad,6
+PRIINOP240742,2,Estudios Específicos,3
+PRIINOP240743,4,Estudios de Especialidad,5
+PRIINOP240744,3,Estudios Generales,4
+PRIINOP240745,3,Estudios Específicos,4
+PRIINOP240746,3,Estudios de Especialidad,4
+PRIINOP240747,3,Estudios de Especialidad,4
+PRIINOP240848,3,Estudios de Especialidad,4
+PRIINOP240849,4,Estudios de Especialidad,6
+PRIINOP240850,3,Estudios de Especialidad,4
+PRIINOP240851,3,Estudios Específicos,4
+PRIINOP240852,5,Estudios Específicos,7
+PRIINOP240853,3,Estudios de Especialidad,4
+PRIINOP240954,3,Estudios Específicos,4
+PRIINOP240955,3,Estudios Específicos,4
+PRIINOP240956,4,Estudios de Especialidad,6
+PRIINOP240957,3,Estudios de Especialidad,4
+PRIINOP240958,3,Estudios Específicos,4
+PRIINOP240959,5,Estudios de Especialidad,8
+PRIINOP241060,4,Estudios Específicos,7
+PRIINOP241061,4,Estudios de Especialidad,7
+PRIINOP241062,4,Estudios Específicos,6
+PRIINOP241063,2,Estudios de Especialidad,3
+PRIINOP241064,2,Estudios de Especialidad,2
+PRIMNOP240101,2,Estudios Generales,3
+PRIMNOP240102,3,Estudios Específicos,4
+PRIMNOP240103,3,Estudios de Especialidad,4
+PRIMNOP240104,4,Estudios Específicos,5
+PRIMNOP240105,3,Estudios Específicos,4
+PRIMNOP240106,2,Estudios Generales,3
+PRIMNOP240107,2,Estudios Generales,3
+PRIMNOP240208,3,Estudios Específicos,4
+PRIMNOP240209,3,Estudios Específicos,4
+PRIMNOP240210,2,Estudios Generales,2
+PRIMNOP240211,4,Estudios Generales,5
+PRIMNOP240212,3,Estudios Generales,4
+PRIMNOP240213,2,Estudios Específicos,3
+PRIMNOP240214,2,Estudios Generales,3
+PRIMNOP240315,3,Estudios de Especialidad,4
+PRIMNOP240316,2,Estudios Generales,3
+PRIMNOP240317,3,Estudios Específicos,4
+PRIMNOP240318,4,Estudios Generales,5
+PRIMNOP240319,3,Estudios Específicos,4
+PRIMNOP240320,4,Estudios Específicos,6
+PRIMNOP240321,3,Estudios de Especialidad,4
+PRIMNOP240422,3,Estudios Específicos,5
+PRIMNOP240423,3,Estudios de Especialidad,4
+PRIMNOP240424,3,Estudios Específicos,4
+PRIMNOP240425,4,Estudios Generales,5
+PRIMNOP240426,3,Estudios Específicos,4
+PRIMNOP240427,3,Estudios Específicos,4
+PRIMNOP240428,3,Estudios Generales,4
+PRIMNOP240529,3,Estudios de Especialidad,4
+PRIMNOP240530,3,Estudios de Especialidad,4
+PRIMNOP240531,3,Estudios de Especialidad,4
+PRIMNOP240532,3,Estudios Específicos,4
+PRIMNOP240533,3,Estudios de Especialidad,4
+PRIMNOP240534,3,Estudios Específicos,4
+PRIMNOP240535,3,Estudios de Especialidad,4
+PRIMNOP240636,3,Estudios Específicos,4
+PRIMNOP240637,3,Estudios de Especialidad,4
+PRIMNOP240638,3,Estudios de Especialidad,4
+PRIMNOP240639,1,Estudios Generales,1
+PRIMNOP240640,3,Estudios de Especialidad,4
+PRIMNOP240641,3,Estudios de Especialidad,5
+PRIMNOP240642,2,Estudios Generales,3
+PRIMNOP240743,3,Estudios de Especialidad,4
+PRIMNOP240744,3,Estudios de Especialidad,4
+PRIMNOP240745,3,Estudios de Especialidad,4
+PRIMNOP240746,3,Estudios Específicos,4
+PRIMNOP240747,3,Estudios Específicos,4
+PRIMNOP240748,3,Estudios Específicos,4
+PRIMNOP240749,3,Estudios de Especialidad,4
+PRIMNOP240850,2,Estudios Generales,2
+PRIMNOP240851,3,Estudios de Especialidad,4
+PRIMNOP240852,3,Estudios de Especialidad,4
+PRIMNOP240853,5,Estudios de Especialidad,8
+PRIMNOP240854,3,Estudios Específicos,4
+PRIMNOP240855,3,Estudios Específicos,4
+PRIMNOP240856,3,Estudios de Especialidad,4
+PRIMNOP240957,3,Estudios Específicos,4
+PRIMNOP240958,4,Estudios de Especialidad,6
+PRIMNOP240959,3,Estudios de Especialidad,4
+PRIMNOP240960,3,Estudios de Especialidad,4
+PRIMNOP240961,5,Estudios de Especialidad,8
+PRIMNOP240962,3,Estudios Específicos,4
+PRIMNOP241063,4,Estudios de Especialidad,6
+PRIMNOP241064,3,Estudios de Especialidad,5
+PRIMNOP241065,3,Estudios de Especialidad,5
+PRIMNOP241066,5,Estudios de Especialidad,8
+PRARNOS240101,2,Estudios Específicos,3
+PRARNOS240102,3,Estudios Generales,4
+PRARNOS240103,2,Estudios de Especialidad,3
+PRARNOS240104,2,Estudios Generales,3
+PRARNOS240105,2,Estudios Generales,3
+PRARNOS240106,3,Estudios Generales,4
+PRARNOS240107,3,Estudios Generales,4
+PRARNOS240108,4,Estudios de Especialidad,6
+PRARNOS240209,3,Estudios Específicos,4
+PRARNOS240210,2,Estudios Generales,3
+PRARNOS240211,2,Estudios de Especialidad,3
+PRARNOS240212,2,Estudios de Especialidad,3
+PRARNOS240213,3,Estudios de Especialidad,4
+PRARNOS240214,3,Estudios de Especialidad,4
+PRARNOS240215,3,Estudios de Especialidad,4
+PRARNOS240216,4,Estudios de Especialidad,6
+PRARNOS240317,3,Estudios Específicos,4
+PRARNOS240318,2,Estudios Específicos,3
+PRARNOS240319,2,Estudios Específicos,3
+PRARNOS240320,3,Estudios Específicos,4
+PRARNOS240321,3,Estudios Generales,4
+PRARNOS240322,3,Estudios de Especialidad,4
+PRARNOS240323,4,Estudios Específicos,6
+PRARNOS240424,3,Estudios de Especialidad,4
+PRARNOS240425,2,Estudios de Especialidad,3
+PRARNOS240426,3,Estudios Específicos,4
+PRARNOS240427,3,Estudios Específicos,4
+PRARNOS240428,3,Estudios Específicos,4
+PRARNOS240429,3,Estudios Específicos,4
+PRARNOS240430,4,Estudios Generales,6
+PRARNOS240531,3,Estudios de Especialidad,4
+PRARNOS240532,3,Estudios Específicos,4
+PRARNOS240533,3,Estudios de Especialidad,4
+PRARNOS240534,3,Estudios Específicos,4
+PRARNOS240535,3,Estudios Específicos,4
+PRARNOS240536,2,Estudios de Especialidad,3
+PRARNOS240537,4,Estudios Generales,6
+PRARNOS240638,3,Estudios de Especialidad,4
+PRARNOS240639,3,Estudios de Especialidad,4
+PRARNOS240640,3,Estudios de Especialidad,4
+PRARNOS240641,3,Estudios Específicos,4
+PRARNOS240642,3,Estudios Específicos,4
+PRARNOS240643,2,Estudios Específicos,3
+PRARNOS240644,4,Estudios Generales,6
+PRARNOS240745,3,Estudios de Especialidad,4
+PRARNOS240746,2,Estudios de Especialidad,3
+PRARNOS240747,3,Estudios de Especialidad,4
+PRARNOS240748,2,Estudios Específicos,3
+PRARNOS240749,2,Estudios de Especialidad,3
+PRARNOS240750,3,Estudios Específicos,4
+PRARNOS240751,4,Estudios Específicos,6
+PRARNOS240852,2,Estudios Específicos,3
+PRARNOS240853,3,Estudios de Especialidad,4
+PRARNOS240854,2,Estudios Específicos,3
+PRARNOS240855,2,Estudios Específicos,3
+PRARNOS240856,5,Estudios de Especialidad,8
+PRARNOS240857,4,Estudios Específicos,6
+PRARNOS240958,2,Estudios de Especialidad,3
+PRARNOS240959,5,Estudios de Especialidad,8
+PRARNOS240960,2,Estudios Específicos,3
+PRARNOS240961,2,Estudios Específicos,3
+PRARNOS240962,3,Estudios Específicos,4
+PRARNOS240963,4,Estudios Específicos,6
+PRARNOS241064,3,Estudios Generales,4
+PRARNOS241065,3,Estudios Específicos,4
+PRARNOS241066,5,Estudios de Especialidad,8
+PRARNOS241067,2,Estudios de Especialidad,3
+PRARNOS241068,2,Estudios Generales,3
+PRARNOS241069,4,Estudios Específicos,6
+PRIMNOS240101,2,Estudios Específicos,2
+PRIMNOS240102,3,Estudios Generales,4
+PRIMNOS240103,3,Estudios de Especialidad,4
+PRIMNOS240104,4,Estudios Generales,5
+PRIMNOS240105,3,Estudios Generales,4
+PRIMNOS240106,2,Estudios Generales,2
+PRIMNOS240107,2,Estudios Generales,2
+PRIMNOS240208,3,Estudios Específicos,5
+PRIMNOS240209,3,Estudios Generales,4
+PRIMNOS240210,2,Estudios de Especialidad,2
+PRIMNOS240211,4,Estudios de Especialidad,5
+PRIMNOS240212,3,Estudios Específicos,4
+PRIMNOS240213,2,Estudios Específicos,2
+PRIMNOS240214,2,Estudios de Especialidad,2
+PRIMNOS240315,3,Estudios Específicos,5
+PRIMNOS240316,2,Estudios Específicos,2
+PRIMNOS240317,3,Estudios de Especialidad,4
+PRIMNOS240318,4,Estudios Específicos,5
+PRIMNOS240319,3,Estudios Específicos,3
+PRIMNOS240320,4,Estudios de Especialidad,6
+PRIMNOS240321,3,Estudios Generales,4
+PRIMNOS240422,3,Estudios de Especialidad,5
+PRIMNOS240423,3,Estudios de Especialidad,4
+PRIMNOS240424,3,Estudios Específicos,4
+PRIMNOS240425,4,Estudios Específicos,5
+PRIMNOS240426,3,Estudios Específicos,4
+PRIMNOS240427,3,Estudios de Especialidad,5
+PRIMNOS240428,3,Estudios Generales,4
+PRIMNOS240529,3,Estudios de Especialidad,4
+PRIMNOS240530,3,Estudios Específicos,4
+PRIMNOS240531,3,Estudios de Especialidad,4
+PRIMNOS240532,3,Estudios Específicos,4
+PRIMNOS240533,3,Estudios de Especialidad,4
+PRIMNOS240534,3,Estudios de Especialidad,5
+PRIMNOS240535,3,Estudios Generales,4
+PRIMNOS240636,3,Estudios Generales,4
+PRIMNOS240637,3,Estudios de Especialidad,4
+PRIMNOS240638,3,Estudios de Especialidad,4
+PRIMNOS240639,2,Estudios Específicos,2
+PRIMNOS240640,3,Estudios de Especialidad,4
+PRIMNOS240641,3,Estudios Específicos,4
+PRIMNOS240642,2,Estudios Generales,2
+PRIMNOS240743,3,Estudios de Especialidad,4
+PRIMNOS240744,3,Estudios de Especialidad,4
+PRIMNOS240745,3,Estudios de Especialidad,4
+PRIMNOS240746,3,Estudios Específicos,4
+PRIMNOS240747,3,Estudios de Especialidad,4
+PRIMNOS240748,3,Estudios Específicos,4
+PRIMNOS240749,3,Estudios Específicos,4
+PRIMNOS240850,2,Estudios de Especialidad,2
+PRIMNOS240851,3,Estudios de Especialidad,4
+PRIMNOS240852,3,Estudios de Especialidad,4
+PRIMNOS240853,5,Estudios de Especialidad,8
+PRIMNOS240854,3,Estudios de Especialidad,4
+PRIMNOS240855,3,Estudios de Especialidad,4
+PRIMNOS240856,3,Estudios de Especialidad,4
+PRIMNOS240957,3,Estudios de Especialidad,4
+PRIMNOS240958,4,Estudios de Especialidad,5
+PRIMNOS240959,3,Estudios Específicos,5
+PRIMNOS240960,3,Estudios Específicos,4
+PRIMNOS240961,5,Estudios Específicos,8
+PRIMNOS240962,3,Estudios Específicos,4
+PRIMNOS241063,4,Estudios Generales,5
+PRIMNOS241064,3,Estudios Específicos,4
+PRIMNOS241065,3,Estudios de Especialidad,4
+PRIMNOS241066,4,Estudios de Especialidad,6
+PRIINOS240101,3,Estudios Específicos,4
+PRIINOS240102,2,Estudios Generales,2
+PRIINOS240103,3,Estudios de Especialidad,4
+PRIINOS240104,4,Estudios Generales,5
+PRIINOS240105,3,Estudios Generales,5
+PRIINOS240106,4,Estudios Generales,5
+PRIINOS240107,2,Estudios Generales,2
+PRIINOS240208,2,Estudios de Especialidad,3
+PRIINOS240209,2,Estudios Específicos,3
+PRIINOS240210,3,Estudios de Especialidad,5
+PRIINOS240211,3,Estudios Específicos,4
+PRIINOS240212,2,Estudios de Especialidad,3
+PRIINOS240213,4,Estudios de Especialidad,5
+PRIINOS240214,4,Estudios de Especialidad,5
+PRIINOS240315,2,Estudios Generales,3
+PRIINOS240316,2,Estudios Generales,2
+PRIINOS240317,3,Estudios de Especialidad,5
+PRIINOS240318,2,Estudios Específicos,3
+PRIINOS240319,4,Estudios Específicos,5
+PRIINOS240320,3,Estudios de Especialidad,4
+PRIINOS240321,3,Estudios Generales,4
+PRIINOS240422,3,Estudios Generales,4
+PRIINOS240423,3,Estudios de Especialidad,4
+PRIINOS240424,3,Estudios Específicos,4
+PRIINOS240425,4,Estudios Específicos,5
+PRIINOS240426,2,Estudios Específicos,3
+PRIINOS240427,2,Estudios Generales,3
+PRIINOS240528,3,Estudios de Especialidad,4
+PRIINOS240529,4,Estudios Específicos,5
+PRIINOS240530,3,Estudios de Especialidad,4
+PRIINOS240531,4,Estudios Específicos,5
+PRIINOS240532,3,Estudios de Especialidad,4
+PRIINOS240533,3,Estudios Generales,5
+PRIINOS240534,2,Estudios Generales,3
+PRIINOS240635,3,Estudios de Especialidad,4
+PRIINOS240636,3,Estudios Generales,4
+PRIINOS240637,4,Estudios de Especialidad,5
+PRIINOS240638,4,Estudios Específicos,5
+PRIINOS240639,3,Estudios de Especialidad,4
+PRIINOS240640,3,Estudios Específicos,5
+PRIINOS240741,3,Estudios de Especialidad,4
+PRIINOS240742,2,Estudios de Especialidad,3
+PRIINOS240743,4,Estudios de Especialidad,5
+PRIINOS240744,3,Estudios Específicos,4
+PRIINOS240745,3,Estudios de Especialidad,4
+PRIINOS240746,3,Estudios Específicos,4
+PRIINOS240747,3,Estudios Específicos,4
+PRIINOS240848,3,Estudios de Especialidad,4
+PRIINOS240849,4,Estudios de Especialidad,5
+PRIINOS240850,3,Estudios Específicos,4
+PRIINOS240851,3,Estudios Específicos,4
+PRIINOS240852,5,Estudios de Especialidad,8
+PRIINOS240853,3,Estudios de Especialidad,4
+PRIINOS240954,3,Estudios de Especialidad,4
+PRIINOS240955,3,Estudios de Especialidad,4
+PRIINOS240956,4,Estudios Específicos,5
+PRIINOS240957,3,Estudios Específicos,4
+PRIINOS240958,4,Estudios Específicos,6
+PRIINOS240959,4,Estudios Específicos,6
+PRIINOS241060,3,Estudios Específicos,4
+PRIINOS241061,4,Estudios de Especialidad,7
+PRIINOS241062,4,Estudios de Especialidad,6
+PRIINOS241063,4,Estudios de Especialidad,5
+PRIINOS241064,3,Estudios de Especialidad,4
+PRIENOS240101,3,Estudios Específicos,4
+PRIENOS240102,2,Estudios Generales,2
+PRIENOS240103,3,Estudios de Especialidad,4
+PRIENOS240104,4,Estudios Generales,5
+PRIENOS240105,3,Estudios Específicos,5
+PRIENOS240106,4,Estudios Generales,5
+PRIENOS240107,2,Estudios Generales,3
+PRIENOS240208,2,Estudios Generales,3
+PRIENOS240209,2,Estudios Generales,3
+PRIENOS240210,3,Estudios de Especialidad,5
+PRIENOS240211,3,Estudios de Especialidad,4
+PRIENOS240212,3,Estudios Específicos,4
+PRIENOS240213,4,Estudios Específicos,5
+PRIENOS240214,4,Estudios de Especialidad,5
+PRIENOS240315,2,Estudios Específicos,3
+PRIENOS240316,2,Estudios Específicos,3
+PRIENOS240317,3,Estudios de Especialidad,5
+PRIENOS240318,2,Estudios Específicos,3
+PRIENOS240319,4,Estudios Específicos,5
+PRIENOS240320,3,Estudios de Especialidad,4
+PRIENOS240321,3,Estudios Generales,4
+PRIENOS240422,3,Estudios de Especialidad,4
+PRIENOS240423,3,Estudios de Especialidad,4
+PRIENOS240424,3,Estudios Específicos,4
+PRIENOS240425,4,Estudios Específicos,5
+PRIENOS240426,3,Estudios de Especialidad,5
+PRIENOS240427,3,Estudios Generales,4
+PRIENOS240428,2,Estudios Generales,3
+PRIENOS240529,2,Estudios de Especialidad,3
+PRIENOS240530,3,Estudios de Especialidad,4
+PRIENOS240531,3,Estudios de Especialidad,4
+PRIENOS240532,3,Estudios de Especialidad,4
+PRIENOS240533,3,Estudios de Especialidad,4
+PRIENOS240534,3,Estudios de Especialidad,5
+PRIENOS240535,2,Estudios Generales,3
+PRIENOS240636,3,Estudios de Especialidad,4
+PRIENOS240637,3,Estudios Generales,4
+PRIENOS240638,2,Estudios de Especialidad,3
+PRIENOS240639,3,Estudios de Especialidad,4
+PRIENOS240640,3,Estudios de Especialidad,4
+PRIENOS240641,3,Estudios Específicos,5
+PRIENOS240642,3,Estudios Generales,5
+PRIENOS240743,3,Estudios de Especialidad,4
+PRIENOS240744,2,Estudios Específicos,3
+PRIENOS240745,3,Estudios de Especialidad,4
+PRIENOS240746,3,Estudios Específicos,4
+PRIENOS240747,3,Estudios de Especialidad,4
+PRIENOS240748,3,Estudios Específicos,4
+PRIENOS240749,3,Estudios Específicos,4
+PRIENOS240850,2,Estudios de Especialidad,3
+PRIENOS240851,3,Estudios de Especialidad,4
+PRIENOS240852,4,Estudios Específicos,6
+PRIENOS240853,3,Estudios Específicos,4
+PRIENOS240854,4,Estudios de Especialidad,6
+PRIENOS240855,3,Estudios de Especialidad,4
+PRIENOS240956,3,Estudios de Especialidad,4
+PRIENOS240957,3,Estudios Generales,4
+PRIENOS240958,3,Estudios Específicos,4
+PRIENOS240959,3,Estudios Específicos,4
+PRIENOS240960,4,Estudios de Especialidad,5
+PRIENOS240961,4,Estudios Específicos,7
+PRIENOS241062,3,Estudios de Especialidad,5
+PRIENOS241063,4,Estudios Específicos,7
+PRIENOS241064,4,Estudios de Especialidad,6
+PRIENOS241065,3,Estudios de Especialidad,4
+PRIENOS241066,3,Estudios de Especialidad,4
+PRIENOS241067,3,Estudios Específicos,4
+PRIANOS240101,2,Estudios Generales,2
+PRIANOS240102,4,Estudios Generales,6
+PRIANOS240103,3,Estudios de Especialidad,4
+PRIANOS240104,4,Estudios Específicos,6
+PRIANOS240105,4,Estudios Generales,6
+PRIANOS240106,2,Estudios Generales,2
+PRIANOS240107,3,Estudios Generales,4
+PRIANOS240208,2,Estudios Generales,3
+PRIANOS240209,3,Estudios de Especialidad,4
+PRIANOS240210,3,Estudios Generales,4
+PRIANOS240211,2,Estudios Generales,2
+PRIANOS240212,4,Estudios Específicos,6
+PRIANOS240213,2,Estudios Generales,2
+PRIANOS240214,2,Estudios Generales,2
+PRIANOS240315,3,Estudios Específicos,4
+PRIANOS240316,3,Estudios de Especialidad,4
+PRIANOS240317,3,Estudios Específicos,4
+PRIANOS240318,3,Estudios Específicos,4
+PRIANOS240319,4,Estudios Específicos,6
+PRIANOS240320,3,Estudios Generales,3
+PRIANOS240321,3,Estudios Específicos,4
+PRIANOS240422,2,Estudios Generales,2
+PRIANOS240423,4,Estudios de Especialidad,6
+PRIANOS240424,3,Estudios de Especialidad,4
+PRIANOS240425,3,Estudios Específicos,4
+PRIANOS240426,4,Estudios de Especialidad,6
+PRIANOS240427,3,Estudios Específicos,4
+PRIANOS240428,3,Estudios Específicos,4
+PRIANOS240529,3,Estudios de Especialidad,4
+PRIANOS240530,3,Estudios de Especialidad,4
+PRIANOS240531,3,Estudios de Especialidad,4
+PRIANOS240532,3,Estudios de Especialidad,4
+PRIANOS240533,3,Estudios Específicos,4
+PRIANOS240534,3,Estudios Específicos,4
+PRIANOS240535,3,Estudios Específicos,4
+PRIANOS240636,3,Estudios de Especialidad,4
+PRIANOS240637,3,Estudios Específicos,4
+PRIANOS240638,3,Estudios de Especialidad,4
+PRIANOS240639,3,Estudios de Especialidad,4
+PRIANOS240640,3,Estudios Específicos,4
+PRIANOS240641,3,Estudios de Especialidad,4
+PRIANOS240642,3,Estudios de Especialidad,4
+PRIANOS240743,2,Estudios Generales,3
+PRIANOS240744,2,Estudios de Especialidad,3
+PRIANOS240745,3,Estudios de Especialidad,4
+PRIANOS240746,4,Estudios de Especialidad,6
+PRIANOS240747,3,Estudios Específicos,4
+PRIANOS240748,4,Estudios Específicos,6
+PRIANOS240749,3,Estudios Específicos,4
+PRIANOS240850,3,Estudios de Especialidad,4
+PRIANOS240851,2,Estudios Generales,2
+PRIANOS240852,3,Estudios de Especialidad,4
+PRIANOS240853,2,Estudios de Especialidad,2
+PRIANOS240854,5,Estudios Específicos,6
+PRIANOS240855,3,Estudios Específicos,4
+PRIANOS240856,3,Estudios Específicos,4
+PRIANOS240957,2,Estudios de Especialidad,3
+PRIANOS240958,3,Estudios de Especialidad,4
+PRIANOS240959,3,Estudios de Especialidad,5
+PRIANOS240960,3,Estudios Específicos,4
+PRIANOS240961,5,Estudios Específicos,8
+PRIANOS240962,3,Estudios de Especialidad,4
+PRIANOS241063,3,Estudios de Especialidad,4
+PRIANOS241064,5,Estudios de Especialidad,8
+PRIANOS241065,2,Estudios de Especialidad,3
+PRIANOS241066,3,Estudios Específicos,4
+PRIFNOS240101,2,Estudios Específicos,3
+PRIFNOS240102,2,Estudios Generales,3
+PRIFNOS240103,3,Estudios de Especialidad,4
+PRIFNOS240104,4,Estudios Generales,6
+PRIFNOS240105,4,Estudios Específicos,6
+PRIFNOS240106,2,Estudios Generales,2
+PRIFNOS240107,4,Estudios de Especialidad,6
+PRIFNOS240208,2,Estudios Específicos,3
+PRIFNOS240209,3,Estudios Generales,4
+PRIFNOS240210,4,Estudios Específicos,6
+PRIFNOS240211,4,Estudios de Especialidad,6
+PRIFNOS240212,2,Estudios Específicos,3
+PRIFNOS240213,4,Estudios Específicos,6
+PRIFNOS240214,2,Estudios Específicos,3
+PRIFNOS240315,2,Estudios Generales,3
+PRIFNOS240316,3,Estudios Específicos,4
+PRIFNOS240317,4,Estudios de Especialidad,6
+PRIFNOS240318,3,Estudios Específicos,4
+PRIFNOS240319,3,Estudios Específicos,4
+PRIFNOS240320,2,Estudios de Especialidad,3
+PRIFNOS240321,4,Estudios Generales,6
+PRIFNOS240422,3,Estudios de Especialidad,4
+PRIFNOS240423,3,Estudios de Especialidad,4
+PRIFNOS240424,4,Estudios Específicos,6
+PRIFNOS240425,2,Estudios Específicos,3
+PRIFNOS240426,4,Estudios Específicos,6
+PRIFNOS240427,3,Estudios de Especialidad,4
+PRIFNOS240428,2,Estudios Generales,3
+PRIFNOS240529,3,Estudios de Especialidad,4
+PRIFNOS240530,4,Estudios Específicos,6
+PRIFNOS240531,2,Estudios de Especialidad,3
+PRIFNOS240532,4,Estudios Específicos,6
+PRIFNOS240533,2,Estudios de Especialidad,3
+PRIFNOS240534,2,Estudios de Especialidad,3
+PRIFNOS240535,2,Estudios Generales,3
+PRIFNOS240636,3,Estudios de Especialidad,4
+PRIFNOS240637,4,Estudios de Especialidad,6
+PRIFNOS240638,3,Estudios de Especialidad,5
+PRIFNOS240639,4,Estudios Específicos,6
+PRIFNOS240640,3,Estudios de Especialidad,4
+PRIFNOS240641,3,Estudios Generales,4
+PRIFNOS240742,3,Estudios de Especialidad,4
+PRIFNOS240743,4,Estudios de Especialidad,6
+PRIFNOS240744,3,Estudios de Especialidad,4
+PRIFNOS240745,3,Estudios de Especialidad,4
+PRIFNOS240746,3,Estudios de Especialidad,4
+PRIFNOS240747,2,Estudios de Especialidad,3
+PRIFNOS240748,3,Estudios Generales,4
+PRIFNOS240849,3,Estudios de Especialidad,5
+PRIFNOS240850,3,Estudios de Especialidad,5
+PRIFNOS240851,4,Estudios de Especialidad,6
+PRIFNOS240852,2,Estudios de Especialidad,3
+PRIFNOS240853,2,Estudios de Especialidad,3
+PRIFNOS240854,1,Estudios de Especialidad,2
+PRIFNOS240855,5,Estudios de Especialidad,8
+PRIFNOS240956,3,Estudios de Especialidad,4
+PRIFNOS240957,3,Estudios de Especialidad,5
+PRIFNOS240958,4,Estudios Específicos,6
+PRIFNOS240959,1,Estudios Específicos,2
+PRIFNOS240960,4,Estudios Específicos,7
+PRIFNOS240961,5,Estudios de Especialidad,8
+PRIFNOS241062,4,Estudios Generales,6
+PRIFNOS241063,4,Estudios Generales,6
+PRIFNOS241064,4,Estudios de Especialidad,6
+PRIFNOS241065,4,Estudios de Especialidad,6
+PRICNOS240101,2,Estudios Generales,2
+PRICNOS240102,2,Estudios Generales,2
+PRICNOS240103,3,Estudios Generales,4
+PRICNOS240104,4,Estudios de Especialidad,6
+PRICNOS240105,3,Estudios Específicos,4
+PRICNOS240106,3,Estudios Específicos,4
+PRICNOS240107,4,Estudios de Especialidad,6
+PRICNOS240208,2,Estudios Generales,2
+PRICNOS240209,3,Estudios de Especialidad,4
+PRICNOS240210,4,Estudios Generales,6
+PRICNOS240211,3,Estudios Generales,4
+PRICNOS240212,3,Estudios de Especialidad,4
+PRICNOS240213,3,Estudios de Especialidad,4
+PRICNOS240214,3,Estudios Generales,4
+PRICNOS240315,2,Estudios Generales,2
+PRICNOS240316,2,Estudios Específicos,2
+PRICNOS240317,4,Estudios Específicos,6
+PRICNOS240318,3,Estudios Específicos,4
+PRICNOS240319,3,Estudios de Especialidad,4
+PRICNOS240320,3,Estudios de Especialidad,4
+PRICNOS240321,4,Estudios de Especialidad,6
+PRICNOS240422,3,Estudios Generales,4
+PRICNOS240423,3,Estudios Específicos,4
+PRICNOS240424,4,Estudios de Especialidad,6
+PRICNOS240425,3,Estudios Específicos,4
+PRICNOS240426,4,Estudios de Especialidad,6
+PRICNOS240427,4,Estudios de Especialidad,6
+PRICNOS240528,2,Estudios Generales,2
+PRICNOS240529,4,Estudios de Especialidad,6
+PRICNOS240530,3,Estudios Específicos,4
+PRICNOS240531,3,Estudios de Especialidad,4
+PRICNOS240532,4,Estudios de Especialidad,6
+PRICNOS240533,4,Estudios de Especialidad,6
+PRICNOS240634,2,Estudios Generales,2
+PRICNOS240635,4,Estudios de Especialidad,6
+PRICNOS240636,4,Estudios de Especialidad,6
+PRICNOS240637,3,Estudios Específicos,4
+PRICNOS240638,3,Estudios de Especialidad,4
+PRICNOS240639,3,Estudios Específicos,4
+PRICNOS240740,3,Estudios Generales,4
+PRICNOS240741,4,Estudios de Especialidad,6
+PRICNOS240742,4,Estudios de Especialidad,6
+PRICNOS240743,3,Estudios de Especialidad,4
+PRICNOS240744,3,Estudios de Especialidad,4
+PRICNOS240745,3,Estudios de Especialidad,4
+PRICNOS240846,3,Estudios de Especialidad,4
+PRICNOS240847,4,Estudios de Especialidad,6
+PRICNOS240848,4,Estudios Específicos,6
+PRICNOS240849,4,Estudios de Especialidad,6
+PRICNOS240850,4,Estudios de Especialidad,6
+PRICNOS240951,5,Estudios de Especialidad,8
+PRICNOS240952,3,Estudios de Especialidad,4
+PRICNOS240953,3,Estudios de Especialidad,4
+PRICNOS240954,3,Estudios de Especialidad,4
+PRICNOS240955,5,Estudios Específicos,10
+PRICNOS241056,4,Estudios de Especialidad,6
+PRICNOS241057,4,Estudios Generales,6
+PRICNOS241058,3,Estudios Específicos,4
+PRICNOS241059,3,Estudios de Especialidad,4
+PRICNOS241060,5,Estudios de Especialidad,10
