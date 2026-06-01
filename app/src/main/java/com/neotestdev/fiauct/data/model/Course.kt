@@ -10,5 +10,8 @@ data class Course(
     val curso: String,
     val docente: String,
     @SerializedName("mod-curso")
-    val modCurso: String? = null
+    val modCurso: String? = null,
+    val horas: Int? = null,
+    val tipoEstudio: String? = null,
+    val creditos: Int? = null
 )

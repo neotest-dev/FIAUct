@@ -16,6 +16,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.neotestdev.fiauct.data.model.Course
 
+private fun tipoEstudioLabel(tipoEstudio: String?): String {
+    return when (tipoEstudio) {
+        "0" -> "Estudios generales"
+        "1" -> "Estudios especificos"
+        "2" -> "Estudios de especialidad"
+        else -> tipoEstudio ?: "Por definir"
+    }
+}
+
 @Composable
 fun CourseDetailScreen(course: Course) {
     Column(
@@ -76,6 +85,9 @@ fun CourseDetailScreen(course: Course) {
                     DetailItem(label = "Modalidad del Curso", value = it, isInverse = true)
                 }
                 DetailItem(label = "Ciclo", value = "Ciclo ${course.ciclo}", isInverse = true)
+                DetailItem(label = "Horas", value = course.horas?.toString() ?: "Por definir", isInverse = true)
+                DetailItem(label = "Creditos", value = course.creditos?.toString() ?: "Por definir", isInverse = true)
+                DetailItem(label = "Tipo de Estudio", value = tipoEstudioLabel(course.tipoEstudio), isInverse = true)
             }
         }
     }

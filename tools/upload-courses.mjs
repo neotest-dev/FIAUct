@@ -42,6 +42,9 @@ for (const chunk of chunks) {
       curso: course.curso ?? "",
       docente: course.docente ?? "",
       "mod-curso": course["mod-curso"] ?? course.modCurso ?? null,
+      horas: course.horas ?? null,
+      creditos: course.creditos ?? null,
+      tipoEstudio: course.tipoEstudio ?? null,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
     uploaded += 1;

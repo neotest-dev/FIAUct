@@ -28,6 +28,9 @@ class FirestoreCourseDataSource(
                         val docente = document.getString("docente") ?: return@mapNotNull null
                         val modCurso = document.getString("mod-curso")
                             ?: document.getString("modCurso")
+                        val horas = document.getLong("horas")?.toInt()
+                        val creditos = document.getLong("creditos")?.toInt()
+                        val tipoEstudio = document.getString("tipoEstudio")
 
                         Course(
                             programa = programa,
@@ -36,7 +39,10 @@ class FirestoreCourseDataSource(
                             codigo = codigo,
                             curso = curso,
                             docente = docente,
-                            modCurso = modCurso
+                            modCurso = modCurso,
+                            horas = horas,
+                            tipoEstudio = tipoEstudio,
+                            creditos = creditos
                         )
                     }
                     .orEmpty()
