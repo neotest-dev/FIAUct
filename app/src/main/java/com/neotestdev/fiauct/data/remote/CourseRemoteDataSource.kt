@@ -5,4 +5,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface CourseRemoteDataSource {
     fun observeCourses(): Flow<List<Course>>
+    suspend fun upsertCourse(course: Course)
+    suspend fun deleteCourse(codigo: String)
 }

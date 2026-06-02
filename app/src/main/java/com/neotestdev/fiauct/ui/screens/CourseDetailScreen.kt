@@ -21,6 +21,10 @@ private fun tipoEstudioLabel(tipoEstudio: String?): String {
         "0" -> "Estudios generales"
         "1" -> "Estudios especificos"
         "2" -> "Estudios de especialidad"
+        "Estudios generales" -> "Estudios generales"
+        "Estudios especificos" -> "Estudios especificos"
+        "Estudios de especialidad" -> "Estudios de especialidad"
+        "Estudios Especificos" -> "Estudios especificos"
         else -> tipoEstudio ?: "Por definir"
     }
 }

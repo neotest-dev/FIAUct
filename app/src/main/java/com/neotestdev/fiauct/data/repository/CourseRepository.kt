@@ -10,4 +10,8 @@ class CourseRepository(
     private val remoteDataSource: CourseRemoteDataSource = FirestoreCourseDataSource()
 ) {
     fun observeCourses(): Flow<List<Course>> = remoteDataSource.observeCourses()
+
+    suspend fun upsertCourse(course: Course) = remoteDataSource.upsertCourse(course)
+
+    suspend fun deleteCourse(codigo: String) = remoteDataSource.deleteCourse(codigo)
 }

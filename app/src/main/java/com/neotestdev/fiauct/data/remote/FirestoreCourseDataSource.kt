@@ -1,17 +1,23 @@
 package com.neotestdev.fiauct.data.remote
 
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.FieldValue
 import com.neotestdev.fiauct.data.model.Course
+import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.flow.flowOn
 
 class FirestoreCourseDataSource(
     private val firestore: FirebaseFirestore = FirebaseModule.firestore
 ) : CourseRemoteDataSource {
 
+    private val coursesCollection = firestore.collection("courses")
+
     override fun observeCourses(): Flow<List<Course>> = callbackFlow {
-        val registration = firestore.collection("courses")
+        val registration = coursesCollection
             .addSnapshotListener { snapshot, error ->
                 if (error != null) {
                     close(error)
@@ -31,8 +37,10 @@ class FirestoreCourseDataSource(
                         val horas = document.getLong("horas")?.toInt()
                         val creditos = document.getLong("creditos")?.toInt()
                         val tipoEstudio = document.getString("tipoEstudio")
+                        val updatedAt = document.getTimestamp("updatedAt")?.toDate()?.time
 
                         Course(
+                            id = document.id,
                             programa = programa,
                             modalidad = modalidad,
                             ciclo = ciclo,
@@ -42,15 +50,38 @@ class FirestoreCourseDataSource(
                             modCurso = modCurso,
                             horas = horas,
                             tipoEstudio = tipoEstudio,
-                            creditos = creditos
+                            creditos = creditos,
+                            updatedAt = updatedAt
                         )
                     }
                     .orEmpty()
-                    .sortedWith(compareBy({ it.programa }, { it.ciclo }, { it.codigo }))
+                    .sortedWith(compareByDescending<Course> { it.updatedAt ?: 0L }.thenBy { it.codigo })
 
                 trySend(courses)
             }
 
         awaitClose { registration.remove() }
+    }.flowOn(Dispatchers.Default)
+
+    override suspend fun upsertCourse(course: Course) {
+        val payload = hashMapOf<String, Any?>(
+            "programa" to course.programa,
+            "modalidad" to course.modalidad,
+            "ciclo" to course.ciclo,
+            "codigo" to course.codigo,
+            "curso" to course.curso,
+            "docente" to course.docente,
+            "mod-curso" to course.modCurso,
+            "horas" to course.horas,
+            "tipoEstudio" to course.tipoEstudio,
+            "creditos" to course.creditos,
+            "updatedAt" to FieldValue.serverTimestamp()
+        )
+
+        coursesCollection.document(course.codigo).set(payload).await()
+    }
+
+    override suspend fun deleteCourse(codigo: String) {
+        coursesCollection.document(codigo).delete().await()
     }
 }

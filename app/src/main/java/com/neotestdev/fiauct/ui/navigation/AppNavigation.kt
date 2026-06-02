@@ -4,12 +4,18 @@ import androidx.compose.animation.*
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Logout
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -25,6 +31,8 @@ sealed class Screen(val route: String, val title: String) {
     object Cycles : Screen("cycles/{program}/{modality}", "Ciclos")
     object Courses : Screen("courses/{program}/{modality}/{cycle}", "Cursos")
     object CourseDetail : Screen("courseDetail/{courseName}/{docente}/{modality}/{cycle}", "Detalle del Curso")
+    object CourseForm : Screen("courseForm?codigo={codigo}", "Gestionar curso")
+    object Login : Screen("login", "Acceso admin")
 }
 
 private fun cycleOrder(cycle: String): Int {
@@ -45,12 +53,35 @@ private fun cycleOrder(cycle: String): Int {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
+fun AppNavigation(
+    allCourses: List<Course>,
+    isAdmin: Boolean,
+    isAuthLoading: Boolean,
+    authError: String?,
+    onSignIn: (String, String) -> Unit,
+    onSignOut: () -> Unit,
+    onSaveCourse: (Course) -> Unit,
+    onDeleteCourse: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
-    val currentRoute = navBackStackEntry?.destination?.route
+    val currentRoute = remember(navBackStackEntry) { navBackStackEntry?.destination?.route }
 
     Scaffold(
+        floatingActionButton = {
+            if (isAdmin && currentRoute?.startsWith("courses/") == true) {
+                FloatingActionButton(
+                    onClick = {
+                        navController.navigate("courseForm")
+                    },
+                    containerColor = Color.White,
+                    contentColor = MaterialTheme.colorScheme.primary
+                ) {
+                    Icon(Icons.Default.Add, contentDescription = "Agregar")
+                }
+            }
+        },
         topBar = {
             TopAppBar(
                 title = { 
@@ -61,6 +92,8 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                             currentRoute?.startsWith("cycles") == true -> Screen.Cycles.title
                             currentRoute?.startsWith("courses") == true -> Screen.Courses.title
                             currentRoute?.startsWith("courseDetail") == true -> Screen.CourseDetail.title
+                            currentRoute?.startsWith("courseForm") == true -> Screen.CourseForm.title
+                            currentRoute?.startsWith("login") == true -> Screen.Login.title
                             else -> "FIA UCT"
                         },
                         style = MaterialTheme.typography.titleLarge
@@ -69,11 +102,23 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 navigationIcon = {
                     if (navController.previousBackStackEntry != null) {
                         IconButton(onClick = { navController.navigateUp() }) {
-                            Icon(Icons.Default.ArrowBack, contentDescription = "Volver")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Volver")
                         }
                     }
                 },
                 actions = {
+                    IconButton(onClick = {
+                        if (isAdmin) {
+                            onSignOut()
+                        } else {
+                            navController.navigate(Screen.Login.route)
+                        }
+                    }) {
+                        Icon(
+                            imageVector = if (isAdmin) Icons.AutoMirrored.Filled.Logout else Icons.Default.Person,
+                            contentDescription = if (isAdmin) "Cerrar sesion" else "Iniciar sesion"
+                        )
+                    }
                     IconButton(onClick = { 
                         navController.navigate(Screen.Programs.route) {
                             popUpTo(Screen.Programs.route) { inclusive = true }
@@ -150,7 +195,19 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                 val filteredCourses = allCourses.filter { 
                     it.programa == program && it.modalidad == modality && it.ciclo == cycle 
                 }
-                CoursesScreen(program, modality, cycle, filteredCourses) { course ->
+                CoursesScreen(
+                    program = program,
+                    modality = modality,
+                    cycle = cycle,
+                    courses = filteredCourses,
+                    isAdmin = isAdmin,
+                    onEditCourse = { courseToEdit ->
+                        navController.navigate("courseForm?codigo=${courseToEdit.codigo}")
+                    },
+                    onDeleteCourse = { courseToDelete ->
+                        onDeleteCourse(courseToDelete.codigo)
+                    }
+                ) { course ->
                     navController.navigate("courseDetail/${course.curso}/${course.docente}/${course.modalidad}/${course.ciclo}")
                 }
             }
@@ -176,6 +233,47 @@ fun AppNavigation(allCourses: List<Course>, modifier: Modifier = Modifier) {
                     it.ciclo == cycle
                 }
                 course?.let { CourseDetailScreen(it) }
+            }
+
+            composable(
+                route = Screen.CourseForm.route,
+                arguments = listOf(navArgument("codigo") {
+                    type = NavType.StringType
+                    nullable = true
+                    defaultValue = null
+                })
+            ) {
+                val courseCode = it.arguments?.getString("codigo")
+                val selectedCourse = courseCode?.let { code ->
+                    allCourses.find { course -> course.codigo == code }
+                }
+                val programs = allCourses.map { it.programa }.distinct().sorted()
+                val modalities = allCourses.map { it.modalidad }.distinct().sorted()
+                val cycles = allCourses.map { it.ciclo }.distinct().sortedBy(::cycleOrder)
+                CourseFormScreen(
+                    course = selectedCourse,
+                    programs = programs,
+                    modalities = modalities,
+                    cycles = cycles,
+                    onSave = {
+                        onSaveCourse(it)
+                        navController.navigateUp()
+                    }
+                )
+            }
+
+            composable(Screen.Login.route) {
+                LaunchedEffect(isAdmin) {
+                    if (isAdmin) {
+                        navController.navigateUp()
+                    }
+                }
+                LoginScreen(
+                    isLoading = isAuthLoading,
+                    error = authError,
+                    onSignIn = onSignIn,
+                    onContinueAsGuest = { navController.navigateUp() }
+                )
             }
         }
     }
