@@ -2,8 +2,8 @@ package com.neotestdev.fiauct.ui.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -11,10 +11,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.neotestdev.fiauct.ui.components.FadingLazyVerticalGrid
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CycleScreen(program: String, modality: String, cycles: List<String>, onCycleSelected: (String) -> Unit) {
+    val gridState = rememberLazyGridState()
+
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Text(
             text = "$program > $modality",
@@ -29,8 +32,9 @@ fun CycleScreen(program: String, modality: String, cycles: List<String>, onCycle
         )
         Spacer(modifier = Modifier.height(24.dp))
         
-        LazyVerticalGrid(
+        FadingLazyVerticalGrid(
             columns = GridCells.Fixed(2),
+            state = gridState,
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {

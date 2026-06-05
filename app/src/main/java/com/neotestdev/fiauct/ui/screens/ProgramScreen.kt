@@ -4,8 +4,8 @@ import androidx.compose.animation.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -16,10 +16,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.neotestdev.fiauct.R
+import com.neotestdev.fiauct.ui.components.FadingLazyColumn
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ProgramScreen(programs: List<String>, onProgramSelected: (String) -> Unit) {
+    val listState = rememberLazyListState()
+
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -40,7 +43,8 @@ fun ProgramScreen(programs: List<String>, onProgramSelected: (String) -> Unit) {
             modifier = Modifier.padding(bottom = 24.dp)
         )
 
-        LazyColumn(
+        FadingLazyColumn(
+            state = listState,
             verticalArrangement = Arrangement.spacedBy(12.dp),
             modifier = Modifier.fillMaxWidth()
         ) {

@@ -1,15 +1,12 @@
 package com.neotestdev.fiauct.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -23,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.neotestdev.fiauct.data.model.Course
+import com.neotestdev.fiauct.ui.components.FadingScrollColumn
 
 @Composable
 fun CourseFormScreen(
@@ -43,10 +41,9 @@ fun CourseFormScreen(
     var creditos by remember { mutableStateOf(course?.creditos?.toString().orEmpty()) }
     var tipoEstudio by remember { mutableStateOf(course?.tipoEstudio ?: "") }
 
-    Column(
+    FadingScrollColumn(
         modifier = Modifier
             .fillMaxSize()
-            .verticalScroll(rememberScrollState())
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)
     ) {

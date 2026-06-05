@@ -15,6 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.neotestdev.fiauct.data.model.Course
+import com.neotestdev.fiauct.ui.components.FadingScrollColumn
 
 private fun tipoEstudioLabel(tipoEstudio: String?): String {
     return when (tipoEstudio) {
@@ -31,7 +32,7 @@ private fun tipoEstudioLabel(tipoEstudio: String?): String {
 
 @Composable
 fun CourseDetailScreen(course: Course) {
-    Column(
+    FadingScrollColumn(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp),

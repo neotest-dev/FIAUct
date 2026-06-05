@@ -1,8 +1,8 @@
 package com.neotestdev.fiauct.ui.screens
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
@@ -16,6 +16,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.neotestdev.fiauct.data.model.Course
 import com.neotestdev.fiauct.ui.components.CourseCard
+import com.neotestdev.fiauct.ui.components.FadingLazyColumn
 import java.text.Normalizer
 
 @Composable
@@ -30,6 +31,7 @@ fun CoursesScreen(
     onCourseSelected: (Course) -> Unit
 ) {
     var query by remember(program, modality, cycle) { mutableStateOf("") }
+    val listState = rememberLazyListState()
 
     val normalizedQuery = remember(query) { normalizeText(query) }
     val searchableCourses = remember(courses) {
@@ -85,7 +87,10 @@ fun CoursesScreen(
             leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) }
         )
         Spacer(modifier = Modifier.height(16.dp))
-        LazyColumn {
+        FadingLazyColumn(
+            state = listState,
+            modifier = Modifier.fillMaxWidth()
+        ) {
             items(
                 items = visibleCourses,
                 key = { "${it.codigo}-${it.modalidad}" },
